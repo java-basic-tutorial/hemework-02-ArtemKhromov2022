@@ -23,8 +23,8 @@ public class Task03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
+
         int min = Integer.MAX_VALUE;
-        System.out.println("Enter the number after symbol >>>. To exit enter a zero.");
         int num;
         do {
             System.out.print(">>> ");
@@ -36,6 +36,9 @@ public class Task03 {
                 min = num;
             }
         } while (true);
-        System.out.println("Minimum number is " + min);
+        if (min != Integer.MAX_VALUE) {
+            System.out.println("Minimum number is " + min);
+        }
+
     }
 }
