@@ -24,5 +24,21 @@ public class Task03 {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
 
+        int min = Integer.MAX_VALUE;
+        int num;
+        do {
+            System.out.print(">>> ");
+            num = scanner.nextInt();
+            if (num<=0) {
+                break;
+            }
+            if (num < min) {
+                min = num;
+            }
+        } while (true);
+        if (min != Integer.MAX_VALUE) {
+            System.out.println("Minimum number is " + min);
+        }
+
     }
 }
